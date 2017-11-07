@@ -1,0 +1,4 @@
+ .jconfirm .jconfirm-box.jconfirm-animation-news {
+     /*the animation name is bob*/
+     transform: rotate(400deg) scale(0);
+ }

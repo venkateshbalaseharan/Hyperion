@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class=" js csstransforms">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Equitas UPI</title>
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+    <link href="./Content/css/screen.css" rel="stylesheet" type="text/css">
+    <link href="./Content/css/base.css" rel="stylesheet" type="text/css">
+    <link href="./Content/css/jquery-confirm.min.css" rel="stylesheet" type="text/css">
+    <link href="./Content/css/alert.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .merchant_logo0Y49Hn {
+            height: 60px;
+            width: 160px;
+            background: url('data:image/png;base64, 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 ') no-repeat scroll left top;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page" class="container" id="page">
+        <div id="header" class="clearfix">
+            <div id="merchantLogo" class="merchantLogo  merchant_logo0Y49Hn "></div>
+            <div id="logo" class="logo" style="float:right;">
+            </div>
+        </div>
+        <div id="order-summary" class="order-summary   order-summary  ">
+            <p id="amountdiv" class="span-5  amount padding1 " style="text-indent: 14px; padding-right: 0; width: 227px">
+                <span id="amountTag">Amount</span>: <span id="selectedCurrency">Rs. </span><span id="totalAmount"></span>.00 <span class="inr-equiv"></span>
+            </p>
+            <p id="txndiv" class="append-1 last transid padding1 summary-right">
+                Transaction ID: <span id="lblTxnId"></span>
+            </p>
+        </div>
+        <div style="visibility: hidden; display: none" id="senfg245lfsd">59f6ebd6c9bbaupi</div>
+        <link type="text/css" rel="stylesheet" href="./Content/css/extracss.css">
+        <div id="content" class="" style="float: left;">
+            <div class="payment_box_header" style="position: relative;">
+                <p>Choose a payment method</p>
+                <span class="branding_info"></span>
+            </div>
+            <div id="payment" class="left topborder" style="width: 713px;">
+                    <div id="payment-tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-vertical">
+                        <ul class="clearfix ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" id="TriggerBlock" style="min-height: 375px;">
+                            <li data-cat="upi" class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="" class="">UPI</a><span class="white"></span></li>
+                        </ul>
+                        <div id="upi" class="pcpPanel ui-tabs-panel ui-widget-content ui-corner-bottom" style="min-height: 375px;">
+                            <div class="upi-container" style="min-height: 375px;">
+                                <div class="vpa-pay" id="pnlVpa">
+                                    <div class="clear"></div>
+                                    <div class="vpa-pay-form aligncenter">
+                                        <div class="vpa-label">Enter Your VPA</div>
+                                        <div class="autoCompleteCombo">
+                                            <input type="text" name="vpa" value="vikalpnagle@equitas" id="vpa" class="text autocompleteField error" placeholder="yourname@bankname"><label for="vpa" generated="false" class="error" style="display: none;">Please fill VPA</label>
+                                            <ul class="autocompleteOutput" id="res-vpa" style="display: none;"></ul>
+                                        </div>
+                                        <span style="clear: both"></span>
+                                    </div>
+                                    <div class="payment-buttons" style="margin-bottom: 50px;">
+                                        <input type="button" name="pay_button" style="margin-right: 0px;" value="Validate" class="" id="pay_button">
+                                    </div>
+                                    <div style="clear: both"></div>
+                                    <div>
+                                        <div class="vpa-dtl-bx">
+                                            <p>
+                                                VPA is your <strong>Virtual Payment Address</strong> in the format yourname@bankname.
+                                            </p>
+                                            <p>
+                                                You can create your VPA from any UPI enabled Bank application or third party application. You need the Bank application installed and active in your phone to complete this transaction.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="vpa-pay" id="pnlProcessing" style="display:none">
+                                    <div class="clear"></div>
+                                    <div class="vpa-pay-form aligncenter">
+
+                                        <p class="left-text" style="padding-left: 76px;display:none">Please authorize the transaction to complete the payment process.</p>
+                                        <a class="migrt-txt">Please authorize the transaction to complete the payment process.</a>
+                                        <p class="expire-dtl"><span class="timer"><img src="Content/images/timer.png" alt=""><strong style="margin-top: 3px">&nbsp;<span>00</span>:<span id="timerMinutes">05</span>:<span id="timerSeconds">00</span></strong></span><br></p>
+
+                                    
+                                    </div>
+                                  
+                                  
+
+                                        <span style="clear: both"></span>
+                                    </div>
+                                    
+                                </div>
+
+
+                            </div>
+                            <!-- </div> -->
+                        </div>
+
+                    </div>
+
+
+            </div>
+            <div class="clear"></div>
+
+
+        </div>
+  
+   
+    <div class="clear"></div>
+    <script src="./Content/js/jquery.min.js" type="text/Javascript" lang="javascript"></script>
+    <script src="Content/js/jquery.base64.min.js"></script>
+    <script src="./Content/js/jquery.blockUI.js" type="text/Javascript" lang="javascript"></script>
+    <script src="./Content/js/jquery-confirm.min.js" type="text/Javascript" lang="javascript"></script>
+    <script src="./Content/js/sha.js" type="text/Javascript" lang="javascript"></script>
+    <script src="./Content/js/util.js" type="text/Javascript" lang="javascript"></script>
+    <script src="./Content/js/app.js" type="text/Javascript" lang="javascript"></script>
+</body>
+
+</html>

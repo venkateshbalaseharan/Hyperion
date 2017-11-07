@@ -1,0 +1,6 @@
+﻿Environment~UAT
+SarvatraBaseUrl~https://uat.sarvatra.in/upi/9999/v1.0/
+ValidateVpa~pg/validate-address
+InitiateCollect~pg/collect
+TransactionStatus~pg/transaction-status
+ContentType~application/json

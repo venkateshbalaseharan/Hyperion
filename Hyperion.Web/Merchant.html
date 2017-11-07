@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Merchant Page</title>
+</head>
+<body>
+    <table style="position: fixed; top: 20%;  left: 30%;">
+        <tr><th colspan="2" style="text-align:center"><h1>Merchant Site</h1></th></tr>
+        <tr>
+            <th>Merchant Id</th>
+            <td><input type="text" id="txtMerchant" value="9860234321" placeholder="Enter Merchant Id" /></td>
+        </tr>
+        <tr>
+            <th>Transaction RefNum</th>
+            <td><input type="text" id="txtRefnum" value="452178542536514kjljiuhngty12347" placeholder="Enter Transaction Refnum" /></td>
+        </tr>
+        <tr>
+            <th>Amount</th>
+            <td><input id="txtAmt" type="text" value="1" placeholder="Enter Amount" /></td>
+        </tr>
+        <tr>
+            <th>Merchant VPA</th>
+            <td><input id="txtMercVpa" type="text" value="m1@equitas" placeholder="Enter Merchant VPA" /></td>
+        </tr>
+        <tr>
+            <th>Expiry</th>
+            <td><input id="txtMinutes" type="text" value="5" placeholder="Enter Expiry Time" /></td>
+        </tr>
+        <tr>
+            <th>Channel</th>
+            <td><input id="txtChannel" type="text" value="equitas" placeholder="Enter Channel" /></td>
+        </tr>
+
+        <tr>
+            <th>Return Url</th>
+            <td><input id="txtUrl" type="text" value="" placeholder="Enter Return Url" /></td>
+        </tr>
+
+
+        <tr>
+            <th>
+                &nbsp;
+            </th>
+            <td>
+                <button id="btnGo">Proceed</button>
+            </td>
+
+        </tr>
+    </table>
+    <script src="Content/js/jquery.min.js"></script>
+    <script src="Content/js/jquery.base64.min.js"></script>
+
+    <script type="text/javascript">
+
+
+$(document).ready(function() {
+    $('#btnGo').click(function () {
+        var clrTxt = "";
+
+          var Mrct =  $.trim($("#txtMerchant").val());
+           var Refnum = $.trim($("#txtRefnum").val());
+           var Amt = $.trim($("#txtAmt").val());
+           var Channel = $.trim($("#txtChannel").val());
+           var MerchantVpa = $.trim($("#txtMercVpa").val());
+           var Expiry = $.trim($("#txtMinutes").val());
+           var RetUrl = $.trim($("#txtUrl").val());
+
+
+           clrTxt = Mrct + "|" + Refnum + "|" + Amt + "|" + Channel + "|" + MerchantVpa + "|" + Expiry + "|" + RetUrl;
+
+
+           var enctxt = $.base64.encode(clrTxt);
+           window.location.href = '/index.html?vData=' + enctxt;
+        return false;
+    });
+
+        });
+    </script>
+
+</body>
+</html>
